@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Event Registration:</h2>
+    <form action="">
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" />
+      <br /><br />
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" />
+      <br /><br />
+
+      <label for="mobno">Phone No.: </label>
+      <input type="tel" name="mobno" id="mobno" />
+      <br /><br />
+
+      <label for="occupation">Occupation type: </label>
+      <select name="occupation" id="occupation">
+        <option value="Student">Student</option>
+        <option value="Professional">Professional</option>
+        <option value="Other">Other</option>
+      </select>
+      <br /><br />
+
+      <fieldset>
+        <legend>Topics of interest:</legend>
+
+        <label for="c1">HTML</label>
+        <input type="checkbox" id="c1" name="c1" />
+        <label for="c2">CSS</label>
+        <input type="checkbox" id="c2" name="c2" />
+        <label for="c3">JvaScript</label>
+        <input type="checkbox" id="c1" name="c3" />
+
+        <br /><br />
+      </fieldset>
+
+      <label for="t1">Comments: </label> <br />
+      <textarea name="t1" id="t1" rows="10" cols="50"></textarea>
+
+      <button>Register</button>
+    </form>
+
+    <br /><br /><br /><br />
+
+    <h2>Job Apllication:</h2>
+
+    <form action="">
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" />
+      <br /><br />
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" /><br /><br />
+
+      <label for="tel">Phone: </label>
+      <input type="tel" name="tel" id="tel" /><br /><br />
+
+      <label for="Resume">Resume: </label>
+      <input type="file" name="Resume" id="Resume" /> <br /><br />
+
+      <label for="exp">Experience(in years): </label>
+      <input type="number" name="exp" id="exp" min="2" max="30" />
+
+      <fieldset>
+        <legend>Skills:</legend>
+
+        <input type="checkbox" name="ch1" id="ch1" />
+        <label for="ch1">HTML</label>
+        <input type="checkbox" name="ch2" id="ch2" />
+        <label for="ch2">CSS</label>
+        <input type="checkbox" name="ch3" id="ch3" />
+        <label for="ch3">JavaScript</label><br />
+      </fieldset>
+      <br />
+
+      <label for="highestEducation">Highest Education: </label>
+      <select name="highestEducation" id="highestEducation">
+        <option value="A">High School</option>
+        <option value="B">UG</option>
+        <option value="C">Phd</option>
+        <option value="D">GOD</option>
+      </select>
+
+      <fieldset>
+        <legend>Availibility:</legend>
+        <label for="r1">Full-time</label>
+        <input type="radio" name="r1" id="r1" /><br />
+        <label for="r2">Part-time</label>
+        <input type="radio" name="r1" id="r2" /><br />
+      </fieldset>
+      <br />
+
+      <label for="tx1">Additional Comments: </label><br />
+      <textarea name="tx1" id="tx1" rows="10" cols="40"></textarea>
+
+      <input type="submit" value="Submit your application" />
+    </form>
+  </body>
+</html>

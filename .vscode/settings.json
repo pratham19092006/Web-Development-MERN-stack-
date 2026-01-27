@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.wait": 0,
+    "liveServer.settings.NoBrowser": true,
+    "livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 1,
+    "livePreview.showServerStatusNotifications": true,
+    "livePreview.portNumber": 5500
+}

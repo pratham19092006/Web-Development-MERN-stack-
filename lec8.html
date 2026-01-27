@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    forms => type of structure to collect user input data...
+
+    Tags:
+
+    1) form => to creat HTML form for user input
+
+    2) input => forms of taking input like checkbox, dropdown, text, radio (circle wala check) etc
+      2.1) name attribute => to give name to input field
+      2.2) id attribute => to give unique identity to input field
+
+    3) label => instrunction as text tells what to insert 
+
+        3.1) it must has for attribute
+            tell for which input , this is labelled
+            and
+            => value of id in input must equals to for attribut label (connecting label with input)
+
+    4) button can be added by both method like using input tag and also button tag
+
+    5) inside input several type are: (button, checkbox, color,date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week)  
+    
+        => name attribute is used in radio to tell that this input belong to common input category
+    
+    6) select => to create dropdown
+    7) option => to create options inside select tag
+    8) textarea => to create textarea for feedback or thoughts
+    9) fieldset => to put all form input in a box
+    10) legend => will add label/text to whole form with fieldset walaa box
+    11) instead of button tag we can also use input tag with type = "submit" to create submit button for whole form
+    12) in select tag by putting multiple size = "5" we ca choose multiple as i want
+    13) placeholder => to give hint to user about what to enter in input field
+    14) if we make same name in radio input then only one can be selected at a time
+    15) form action = "" => to tell where to submit the form data on which server
+    
+-->
+
+    <form>
+      <label for="email">Enter email id</label>
+      <input type="text" id="email" placeholder="enter your email here..." />
+
+      <br /><br />
+
+      <label for="pass">Enter password</label>
+      <input type="password" id="pass" placeholder="enter password" />
+
+      <br /><br />
+
+      <label for="gender">male</label>
+      <input type="radio" id="gender1" name="c1" />
+
+      <label for="gender">female</label>
+      <input type="radio" id="gender2" name="c1" />
+
+      <label for="gender">prefer not to say</label>
+      <input type="radio" id="gender3" name="c1" />
+
+      <br /><br />
+
+      <!-- type submit means creating subit button for whole form , if we want to submit on some server 
+        but by using button we have to do some more woeks -->
+      <input type="submit" value="Submit" />
+
+      <option value="prat"></option>
+    </form>
+
+    <br /><br /><br /><br /><br />
+
+    <form>
+      <!-- fieldset put all form input in a box -->
+      <fieldset>
+        <!-- legend will add label/text to whole form with fieldset walaa box  -->
+        <legend>Enter your details in this given form:</legend>
+        <br />
+        <label for="datepicker">Choose date: </label>
+        <!-- for selecting date as input -->
+        <input type="date" id="datepicker" />
+        <br />
+
+        <label for="s1">Choose your dish: </label>
+        <!-- for creating dropdown use select and for its options use option tag -->
+        <select name="dishes" id="s1">
+          <option value="Maggie">Maggie</option>
+          <option value="Krkure">Kurkure</option>
+          <option value="Chips">Chips</option>
+        </select>
+
+        <br /><br />
+
+        <label for="c1">Choose your car: </label>
+        <!-- by putting multiple size = "5" we ca choose multiple as i want -->
+        <select name="cars" id="c1" multiple size="5">
+          <option value="maruti">maruti</option>
+          <option value="suzuki">suzuki</option>
+          <option value="wagnor">wagnor</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes</option>
+        </select>
+
+        <br /><br />
+        <!-- for creating button  -->
+        <button>Mai hu button:</button>
+
+        <br /><br />
+
+        <label for="textarea1">Share our thoughts: </label> <br />
+        <!-- for creating textarea like entering for feedback, ot thoughts  -->
+        <textarea
+          name="textarea1"
+          id="textarea1"
+          rows="10"
+          ,
+          cols="40"
+          placeholder="Enter your feedback"
+        ></textarea>
+      </fieldset>
+    </form>
+
+    <br /><br />
+
+
+    <fieldset>
+      <legend>small form: </legend>
+
+    <form action="">
+      <label for="submitting">click here bachhe: </label>
+      <input type="submit" id="submitting" name="button2" value="subscribe" />
+
+      <br /><br />
+      <label for="radio1">good</label>
+      <input type="radio" name="radio1" id="radio1"></input>
+
+      <br />
+
+      <label for="radio2">better</label>
+      <input type="radio" name="radio1" id="radio2" />
+      <br />
+
+      <label for="radio3">best</label>
+      <input type="radio" name="radio1" id="radio3" />
+      <br><br>
+
+      <label for="c1">English</label>
+      <input type="checkbox" name="check1" id="c1">
+
+      <label for="c2">Hindi</label>
+      <input type="checkbox" id="c2" name="check2">
+
+      <br>
+      <!-- file upload walaa button -->
+      <label for="fileselect1">Upload file: </label>
+      <input type="file" name="fileselect1" id="fileselect1" >
+      <br>
+      <!-- making image as button -->
+       <label for="imagebutton1">click on the arrow button: </label>
+       <input type="image" name="imagebutton1" id="imagebutton1" alt="click here " src="images\arrow img.jpg" width="20" height="20">
+      <br><br>
+
+      <label for="pass1">Enter password: </label>
+       <input type="password" name="pass1" id="pass1" placeholder="Enter your password">
+       <br><br>
+
+      <label for="d1">Enter your date: </label>
+       <input type="date" name="d1" id="d1">
+
+
+    </form>
+
+  </fieldset>
+
+    <br /><br /><br />
+  </body>
+</html>
