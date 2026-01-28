@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* by default margin and padding are applied to some elements like h1, p, etc.
+        so we use UNIVERSAL SELECTOR TO RESET THEM */
+      /* UNIVERSAL SELECTOR */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* to include padding and border in height and width */
+        /* more controlled width and height easier to control */
+      }
+      h1 {
+        background-color: rgb(138, 234, 12);
+        text-align: center;
+        font-size: 60px;
+        /* border-style: dotted;
+        border-width: 4px;
+        border-color: blueviolet; */
+        border: solid brown 4px; /* shorthand notation for border-style, border-width, border-color */
+
+        /* border-radius: 20px; to make corners rounded */
+
+        border-top-left-radius: 20px; /* to make only top-left corner rounded */
+        border-bottom-right-radius: 20px; /* to make only bottom-right corner rounded */
+
+        border-right: dashed rgb(250, 4, 95) 5px; /* to make only right border style */
+
+        /* height: 150px; */
+        margin-bottom: 30px;
+      }
+
+      .firstpara {
+        background-color: rgb(41, 219, 151);
+        border: dotted black 4px;
+        border-radius: 5px;
+        border-width: 10px;
+        width: 600px;
+        padding: 25px; /* space inside the border layer and content layer */
+        margin: 50px; /* space outside the border layer */
+        /* or space between different boxes */
+        /* left, right, top, bottom can be specified individually in both above properties */
+      }
+      .secondpara {
+        background-color: rgb(215, 221, 34);
+        font-size: 18px;
+        border: solid black 4px;
+        border-radius: 5px;
+        width: 600px;
+
+        margin-top: 55px;
+        margin-left: 30px;
+      }
+      .thirdpara {
+        background-color: rgba(8, 185, 235, 0.3);
+        border: solid black 4px;
+        border-radius: 5px;
+        width: 600px;
+        padding-left: 30px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        /* 2nd way */
+        /* padding: 15px, 25px, 35px,
+          45px; top, right, bottom, left shorthand notation */
+
+        /* 3rd way */
+        /* padding: 20px 40px; vertical(top and bottom), horizontal(left and right) shorthand notation */
+      }
+
+      /* height and width is not applied to inline elements like span see below */
+
+      /* Inline elements:
+
+        ❌ Do NOT respect margin-top
+
+        ❌ Do NOT respect margin-bottom
+
+        ✅ Only respect margin-left & margin-right */
+      span {
+        background-color: rgba(8, 185, 235, 0.3);
+        border: solid black 4px;
+        width: 600px;
+        height: 200px;
+        border-radius: 5px;
+        padding: 20px 40px; /* vertical(top and bottom), horizontal(left and right) shorthand notation */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Box Model means whenever you will be rndering any content on the browser than the browser will render that content in rectangular box -->
+
+    <h1>Welcome to codehelp</h1>
+
+    <span>Welcome to pratham's web dev course</span>
+
+    <p class="firstpara">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, enim
+      maiores, eveniet velit ab at magnam nobis animi nemo molestias, quo
+      corrupti iusto. Perspiciatis nostrum reprehenderit accusantium deleniti
+      eaque suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Enim consectetur non provident voluptates quibusdam ut quae suscipit,
+      natus, obcaecati tempora repellat, voluptatem itaque fugiat atque velit
+      quo totam perspiciatis. Officiis corrupti voluptate ipsum ad doloribus
+      accusamus totam voluptatum dignissimos tempora!
+    </p>
+
+    <p class="secondpara">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, obcaecati
+      quidem minima culpa vel soluta incidunt, ea enim explicabo quisquam
+      maiores vero delectus dolores numquam fugiat dolore odio placeat
+      laboriosam praesentium dolor! Obcaecati quam, ipsum sunt, voluptas porro
+      voluptatum maiores suscipit, veniam nam unde vel!
+    </p>
+
+    <p class="thirdpara">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, nisi
+      voluptate molestiae qui neque itaque et ut similique maiores officia,
+      libero consectetur porro consequuntur laboriosam. Quibusdam voluptate
+      asperiores autem tenetur?
+    </p>
+  </body>
+</html>
