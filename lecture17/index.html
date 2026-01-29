@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* all position types::
+        1. static (by default every element is static)
+        2. relative
+        3. absolute
+        4. fixed
+        5. sticky
+         */
+      div {
+        border: 2px solid black;
+      }
+      .container {
+        height: 4000px;
+        background-color: bisque;
+      }
+      img {
+        margin: 30px;
+      }
+      .image2 {
+        /* position: relative means the element is positioned relative to its normal position and its  previous original gap is preserved */
+        /* position: relative;
+        top: 150px;
+        right: 200px; */
+
+        /* position: absolute means the element is positioned relative to its nearest positioned ancestor and previous original gap is not preserved */
+        position: absolute;
+        top: 200px;
+      }
+
+      .image4 {
+        /* position: fixed means the element is positioned relative to the viewport and it stays in the same place even if the page is scrolled */
+        position: fixed;
+      }
+      .image3 {
+        /* position: sticky means the element is positioned based on the user's scroll position and shows his sticky behaviour only inside its parent container but fixed is fixed for entire viewport */
+        position: sticky;
+        top: 50px;
+      }
+      .box {
+        background-color: aquamarine;
+        height: 3000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="image1"
+        src="/lecture17\images\3840x2160-Images-Free-Download.jpg"
+        alt="First image"
+        height="300px"
+        width="300px"
+      />
+      <img
+        class="image2"
+        src="/lecture17/images/Nature-wallpapers-Full-HD-backgroud.jpg"
+        alt="Second image"
+        height="300px"
+        width="300px"
+      />
+      <img
+        class="image3"
+        src="/lecture17/images/OIP.webp"
+        alt="Third image"
+        height="300px"
+        width="300px"
+      />
+      <img
+        class="image4"
+        src="/lecture17/images/R.jpg"
+        alt="Fourth image"
+        height="300px"
+        width="300px"
+      />
+    </div>
+
+    <div class="box"></div>
+  </body>
+</html>
