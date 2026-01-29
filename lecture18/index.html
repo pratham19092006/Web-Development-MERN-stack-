@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS size unit: px, em, rem, %, vh, vw (these are the units which represents length, relative size, and viewport dimensions)-->
+    <!-- 
+
+    em: relative to the font-size of the parent element - if the parent element has a font-size of 16px, then 1em = 16px, 2em = 32px
+
+    rem: relative to the font-size of the root element (html) - if the root element has a font-size of 16px, then 1rem = 16px, 2rem = 32px
+
+    %: percentage relative to the parent element - if the parent element has a width of 200px, then 50% = 100px
+
+    vh: viewport height - 1vh is equal to 1% of the viewport height
+
+    vw: viewport width - 1vw is equal to 1% of the viewport width
+    
+    px: pixels - absolute unit representing a single dot on the screen or 1/96th of an inch
+    (in high resolution : number of pixels per inch is higher so px size appears smaller, in low resolution : number of pixels per inch is lower so px size appears bigger)
+
+    Physical pixel vs logical pixel:
+    Physical pixel = real hardware dot on your screen.
+    It’s the actual tiny LED on your monitor/phone.
+
+    Logical pixel = what software thinks is 1 pixel.
+    It’s a virtual unit used by OS, browser, and UI frameworks.
+
+    PPI = (pixels per inch)how many pixels exist in 1 inch of a screen.
+    DPI = (dots per inch)how many ink dots a printer prints in 1 inch.
+     -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        border: 2px solid red;
+        width: 20%;
+        /* 20% means 20 percent of the parent element's width */
+      }
+      .parent {
+        border: 1px solid rgb(232, 48, 220);
+        background-color: rgb(205, 200, 66);
+        width: 50%;
+      }
+      .child {
+        border: 1px solid green;
+        width: 20%;
+        background-color: cornflowerblue;
+      }
+      .container {
+        border: 2px solid green;
+        background-color: bisque;
+        height: 100vh;
+        width: 50vw;
+      }
+      .box1 {
+        border: 2px solid black;
+        margin: 10px;
+        font-size: 50px;
+      }
+
+      .wrapper {
+        font-size: 1em; /* assuming root font-size is 16px, so 1em = 16px */
+      }
+
+      .px {
+        width: 200px;
+      }
+      .vw {
+        width: 10vw;
+      }
+      .em {
+        width: 10em;
+      }
+
+      .con {
+        font-size: 10px;
+      }
+
+      .con1 {
+        font-size: 10em;
+      }
+
+      .plorem {
+        border: 1rem dotted rgb(101, 239, 16);
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">Welcome to codehelp!</div>
+
+    <div class="parent">
+      <div class="child">Child</div>
+    </div>
+
+    <div class="container">Welcome pratham mishra</div>
+
+    <div class="box1">hello pratham</div>
+
+    <div class="wrapper">
+      <div class="box px">I am 200px wide</div>
+      <div class="box vw">I am 10vw wide</div>
+      <div class="box em">I am 10em wide</div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="con">
+      Hello jee
+      <div class="con1">Welcome to codehelp</div>
+    </div>
+
+    <p class="plorem">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, nemo.
+    </p>
+  </body>
+</html>
