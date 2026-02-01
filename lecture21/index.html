@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Media size: how your website looks on different sized devices.
+     by media size we can decide how to style our website for different screen sizes -->
+
+    <style>
+      .box {
+        height: 400px;
+        width: 400px;
+        background-color: #f5ca8b;
+        border: 2px solid black;
+      }
+
+      @media (max-width: 500px) and (min-width: 300px) {
+        /* max-width: 500px means the styles inside this block will apply when the viewport width is 500px or less */
+
+        /* min-width: 300px means the styles inside this block will apply when the viewport width is 300px or more */
+
+        .box {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hello Jee</div>
+  </body>
+</html>
