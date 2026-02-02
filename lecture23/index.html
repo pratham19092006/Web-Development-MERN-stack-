@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Animation in CSS:  -->
+    <!-- when a particular element shifts from one styling to another than this is called Animation 
+    
+    @keyframes : this is used to define the styles for the animation at various stages of the animation. 
+    Inside the keyframes block, we define the styles for the animation at various stages using percentage values (0% to 100%) or using the keywords 'from' and 'to'. -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: #f1f16f;
+        border: 2px solid black;
+      }
+
+      .box {
+        width: 350px;
+        height: 80px;
+        background-color: #10eaa1;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        /* animation-name is the name of the animation defined using @keyframes */
+        /* animation-name: rightMovement; */
+        /* animation-duration defines how long the animation takes to complete one cycle */
+        /* animation-duration: 5s; */
+        /* animation-iteration-count defines how many times the animation should repeat. It can be a number or 'infinite' */
+        /* animation-iteration-count: 1; */
+        /* animation-delay defines the delay before the animation starts */
+        /* animation-delay: 100ms; */
+
+        /* animation-direction defines whether the animation should play forward, backward, or alternate */
+        /* animation-direction: alternate; */
+
+        /* animation-timing-function: this defines the speed curve of the animation */
+
+        /* linear: The animation progresses at a constant speed */
+        /* animation-timing-function: linear; */
+
+        /* ease: The animation starts slowly, accelerates in the middle, and slows down at the end */
+        /* animation-timing-function: ease; */
+
+        /* ease-in: The animation starts slowly and then accelerates */
+        /* animation-timing-function: ease-in; */
+
+        /* ease-out: The animation starts quickly and then slows down */
+        /* animation-timing-function: ease-out; */
+
+        /* ease-in-out: The animation starts slowly, accelerates in the middle, and then slows down at the end */
+        /* animation-timing-function: ease-in-out; */
+
+        /* cubic-bezier: Custom timing function defined by four control points */
+        /* animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); */
+
+        /* animation-fill-mode defines how a CSS animation applies styles to its target before and after it is executing */
+        /* forwards: The element will reside at the end state of the animation after it completes */
+        /* backwards: The element will reside at the start state of the animation before it begins */
+        /* both: The element will follow the rules for both forwards and backwards */
+        /* none: The element will not apply any styles before or after the animation */
+        /* animation-fill-mode: both; */
+
+        /* animation-play-state: This property allows you to pause and resume the animation */
+        /* animation-play-state: paused; */
+        /* animation-play-state: running; */
+
+        /* short hand notation: */
+        /* animation: [animation-duration] [animation-timing-function] [animation-delay] [animation-iteration-count] [animation-direction] [animation-fill-mode] [animation-play-state] [animation-name]; */
+        animation: 5s linear 1s infinite alternate none running rightMovement;
+      }
+      #box2 {
+        top: 500px;
+        left: 1170px;
+        width: 350px;
+        height: 80px;
+        background-color: #10eaa1;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        animation: 5s ease-in 1s infinite alternate none running leftMovement;
+      }
+
+      #circle {
+        top: 150px;
+        left: 700px;
+        width: 50px;
+        height: 50px;
+        background-color: #4909b0;
+        border-radius: 100%;
+        border: 3px solid yellow;
+        margin: 10px;
+        position: relative;
+        animation: 10s ease-in-out 1s infinite alternate-reverse none running
+          circleMovement;
+      }
+      @keyframes rightMovement {
+        from {
+          top: 0;
+          left: 0;
+        }
+        to {
+          top: 0;
+          left: 1170px;
+        }
+      }
+      @keyframes leftMovement {
+        from {
+          top: 530px;
+          left: 1170px;
+        }
+        to {
+          top: 530px;
+          left: 0;
+        }
+      }
+      @keyframes circleMovement {
+        0% {
+          top: 1%;
+          left: 5%;
+        }
+        30% {
+          top: 5%;
+          left: 70%;
+        }
+        60% {
+          top: 50%;
+          left: 10%;
+        }
+        100% {
+          top: 45%;
+          left: 5%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">Hello bhai kaise ho</div>
+      <div id="box2">Achhaa nai hu</div>
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>
