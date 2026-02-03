@@ -1,0 +1,49 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: teal;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: all 2s ease-out 500ms;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  /* rotate(x_deg): it will rotate the element by x degrees clockwise, if x is negative it will rotate counter-clockwise */
+  /* transform: rotate(40deg); */
+
+  /* scale(x): it will scale the element by x times */
+  /* transform: scale(2); */
+
+  /* skew(x_deg): it will skew the element by x degrees along the X-axis in positive direction if x is negative  , and in negative direction if x is positive*/
+  /* transform: skew(45deg); */
+
+  /* translate(x): it will translate(move) the element by x pixels along the X-axis */
+  /* transform: translate(100px); */
+
+  /* translate(y):  it will translate(move) the element by y pixels along the Y-axis => y positive means downwards and y negative means upwards */
+  /* transform: translateY(100px); */
+
+  /* translate(x, y): it will translate(move) the element by x pixels along the X-axis and by y pixels along the Y-axis */
+  /* transform: translate(100px, 100px) ; */
+
+  /* it will rotate element in skew-positive direction(negative) */
+  /* transform: skew(30deg); */
+
+  /* shorthand-notation */
+  transform: rotate(200deg) scale(0.5) translate(500px, 500px);
+}
+
+p {
+  font-size: 36px;
+}
