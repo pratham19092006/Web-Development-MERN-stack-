@@ -41,7 +41,7 @@
   /* transform: skew(30deg); */
 
   /* shorthand-notation */
-  transform: rotate(200deg) scale(0.5) translate(500px, 500px);
+  transform: rotate(200deg) scale(0.5) translate(500px, 500px) skew(-20deg);
 }
 
 p {
