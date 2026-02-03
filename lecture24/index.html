@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Transition: -->
+    <!-- Transition is used to change the state from one to another smoothly -->
+
+    <!-- Transition is state change from one state to another 
+     while
+     Animation is series of complex movements
+     So, Animation is parent entity of Transition -->
+
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: #10eaa1;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        text-align: center;
+        line-height: 400px;
+
+        /* transition-property: defines the CSS property to which the transition is applied */
+        /* transition-property: width, background-color, height, border-radius; */
+        /* or */
+        transition-property: all;
+
+        /* transition-duration: defines the duration of the transition */
+        transition-duration: 1s;
+
+        /* transition-timing-function: defines the speed curve of the transition */
+        transition-timing-function: ease-out;
+
+        /* transition-delay: defines the delay before the transition starts */
+        transition-delay: 500ms;
+
+        /* Short-hand-notation:  */
+        /* transition: property duration timing-function delay; we can skip some values which we dont want but in same order */
+        transition: all 1s ease-out 500ms;
+      }
+
+      /* below is the pseudo class
+      Pseudo-class is a keyword added to selector that specifies a special state of the selected element(s). eg. :hover means whenever we hover over the element , the state changes */
+      .box:hover {
+        width: 600px;
+        background-color: orange;
+        height: 2000px;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hover over me to see the transition effect!</div>
+  </body>
+</html>
