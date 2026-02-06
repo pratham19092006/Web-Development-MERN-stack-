@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(69, 62, 62);
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  padding: 4rem;
+  border: 2px solid white;
+  /* justify-items: center; */
+  /* justify-item is used to place the item horizontally within its grid cell, its values are start, end, center, and stretch (stretch will stretch the item to fill the entire grid cell horizontally if height and width are not set) */
+
+  /* align-items is used to place the item vertically within its grid cell, its values are start, end, center, and stretch (stretch will stretch the item to fill the entire grid cell vertically if height and width are not set) */
+  /* align-items: stretch; */
+
+  place-items: center;
+  /* place-items is a shorthand for setting both justify-items and align-items properties together, its combined values are start, end, center, and stretch (stretch will stretch the item to fill the entire grid cell both horizontally and vertically if height and width are not set)ddd */
+}
+
+.item {
+  height: 30px;
+  width: 30px;
+  background-color: #5edd37;
+  border: 5px solid rgb(217, 202, 202);
+  /* justify-self is use to place the item horizontally within its grid cell,
+  its values are start, end, center, and stretch (stretch will stretch the item to fill the entire grid cell horizontally if height and width are not set) */
+
+  /* justify-self: center;
+  align-self: center; */
+
+  /* align-self is used to place the item vertically within its grid cell,
+  its values are start, end, center, and stretch (stretch will stretch the item to fill the entire grid cell vertically if height and width are not set) */
+
+  /* place-self: stretch; */
+  /* place-self is a shorthand for setting both justify-self and align-self properties together, its combined values are start, end, center, and stretch (stretch will stretch the item to fill the entire grid cell both horizontally and vertically if height and width are not set) */
+}
