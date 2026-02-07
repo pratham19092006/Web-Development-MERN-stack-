@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 3D transform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        padding: 5rem;
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      .item {
+        padding: 2rem;
+        height: 150px;
+        width: 150px;
+        background-color: rgb(88, 237, 58);
+        border: 2px solid black;
+      }
+      #rotateX:hover {
+        /* x-axis is in 3D is towards me or towards outward */
+        /* positive value moves towards me, negative moves away */
+        /* perspective means we are setting the distance between the viewer and the z=0 plane */
+        transform: perspective(300px) rotateX(45deg);
+      }
+
+      #rotateY:hover {
+        /* y-axis in 3D is horizontal axis */
+        /* positive value moves right, negative moves left */
+        transform: rotateY(45deg);
+      }
+
+      #rotateZ:hover {
+        /* z-axis in 3D is vertical axis */
+        /* positive value moves clockwise, negative moves counterclockwise */
+        transform: rotateZ(45deg);
+      }
+      #translateX:hover {
+        /* translateX will move the element in horizontal direction */
+        /* positive value moves right, negative moves left */
+        transform: translateX(50px);
+      }
+      #translateY:hover {
+        /* translateY will move the element in vertical direction */
+        transform: translateY(50px);
+        /* if deg is positive than it moves down other wise it moves up */
+      }
+      #translateZ:hover {
+        /* translateZ will move the element in depth direction */
+        /* positive value moves towards me, negative moves away */
+        transform: perspective(300px) translateZ(50px);
+      }
+      #scaleX:hover {
+        /* scaleX will scale the element in horizontal direction */
+        /* values greater than 1 will increase size, values between 0 and 1 will decrease size */
+        transform: scaleX(1.5);
+      }
+      #scaleY:hover {
+        /* scaleY will scale the element in vertical direction */
+        transform: scaleY(1.5) skewY(45deg);
+      }
+      #scaleZ:hover {
+        /* scaleZ will scale the element in depth direction */
+        /* perspective means we are setting the distance between the viewer and the z=0 plane means agar z axis me bhi move krega to visibility hogii */
+        transform: perspective(300px) scaleZ(4.5) rotateY(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="rotateX">RotateX</div>
+      <div class="item" id="rotateY">RotateY</div>
+      <div class="item" id="rotateZ">RotateZ</div>
+      <div class="item" id="translateX">TranslateX</div>
+      <div class="item" id="translateY">TranslateY</div>
+      <div class="item" id="translateZ">TranslateZ</div>
+      <div class="item" id="scaleX">ScaleX</div>
+      <div class="item" id="scaleY">ScaleY</div>
+      <div class="item" id="scaleZ">ScaleZ</div>
+    </div>
+  </body>
+</html>
