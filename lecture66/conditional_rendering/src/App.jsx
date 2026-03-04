@@ -9,7 +9,7 @@ function App() {
   const [isLoggedIn, setLoggedIn] = useState(true);
 
 
-  // conditional rendering using if-else statement 
+  // conditional rendering using if-else statement .
 
   // if(isLoggedIn){
   //   return (
